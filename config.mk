@@ -59,8 +59,8 @@ else
     CFLAGS += -D_FILE_OFFSET_BITS=64 -O0 -g -W -Wall
   else
     #FFLAGS += -finit-local-zero -fdefault-double-8 -fdefault-real-8 -O2 -I./$(MODIR) -W -Wall -ffixed-line-length-132
-    FFLAGS +=  -fdefault-double-8 -fdefault-real-8 -O2 -I./$(MODIR) -W -Wall -ffixed-line-length-132
-    CFLAGS += -D_FILE_OFFSET_BITS=64 -O2 -W -Wall
+    FFLAGS +=  -fdefault-double-8 -fdefault-real-8 -O2 -I./$(MODIR) -W -ffixed-line-length-132
+    CFLAGS += -D_FILE_OFFSET_BITS=64 -O2 -W 
   endif
 
   LIBS += $(BLASLAPACK)
